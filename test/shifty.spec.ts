@@ -7,7 +7,7 @@ import {
   vi,
   expect,
 } from "vitest";
-import Shifty from "../src/main";
+import Shifty from "../src/shifty";
 
 describe("Validate Characters Method", () => {
   it.concurrent("Doesn't allow special characters when not hardened", () => {
