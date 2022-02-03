@@ -37,7 +37,7 @@ export default class Shifty {
    * @param {number} [defaultLength=DEFAULT_LENGTH] - the default length of the secret string in case no value is passed to generate
    * @return {void}
    */
-  constructor(harden: boolean = true, defaultLength = DEFAULT_LENGTH) {
+  constructor(harden = true, defaultLength = DEFAULT_LENGTH) {
     this.hardenPassword = harden;
     this.randomBuffer = new Uint8Array(0);
     this.defaultLength = defaultLength;
