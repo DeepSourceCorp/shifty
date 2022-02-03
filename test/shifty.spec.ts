@@ -1,12 +1,4 @@
-import {
-  assert,
-  describe,
-  it,
-  beforeEach,
-  afterEach,
-  vi,
-  expect,
-} from "vitest";
+import { assert, describe, it, beforeEach, afterEach, vi } from "vitest";
 import Shifty from "../src/shifty";
 
 describe("Validate Characters Method", () => {

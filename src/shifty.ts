@@ -37,7 +37,7 @@ export default class Shifty {
    * @param {number} [defaultLength=DEFAULT_LENGTH] - the default length of the secret string in case no value is passed to generate
    * @return {void}
    */
-  constructor(harden: boolean = true, defaultLength: number = DEFAULT_LENGTH) {
+  constructor(harden: boolean = true, defaultLength = DEFAULT_LENGTH) {
     this.hardenPassword = harden;
     this.randomBuffer = new Uint8Array(0);
     this.defaultLength = defaultLength;
@@ -45,6 +45,7 @@ export default class Shifty {
       this.mode = "W3C";
     } else {
       this.mode = "Failover";
+      // skipcq: JS-0002
       console.warn(
         "SHIFTY: Using failover method for generating secret, this uses Math.random() and is not cryptographically safe"
       );
