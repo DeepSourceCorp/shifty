@@ -33,11 +33,11 @@ export default class Shifty {
 
   /**
    * Constructor function
-   * @param {boolean=true} harden this hardens the password using special chars
-   * @param {any} defaultLength=DEFAULT_LENGTH
-   * @return {any}
+   * @param {boolean} [harden = true] - this hardens the password using special chars
+   * @param {number} [defaultLength=DEFAULT_LENGTH] - the default length of the secret string in case no value is passed to generate
+   * @return {void}
    */
-  constructor(harden: boolean = true, defaultLength = DEFAULT_LENGTH) {
+  constructor(harden: boolean = true, defaultLength: number = DEFAULT_LENGTH) {
     this.hardenPassword = harden;
     this.randomBuffer = new Uint8Array(0);
     this.defaultLength = defaultLength;
