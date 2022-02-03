@@ -2,7 +2,7 @@
 
 # Shifty
 
-  <p>Shifty is a tiny secrets generator, built using TypeScript for the web</p>
+  <p>Shifty is a tiny secrets generator, built using TypeScript for the web.</p>
 
 </div>
 
@@ -15,10 +15,10 @@ yarn add @deepsourcelabs/shifty
 ## Usage
 
 ```js
-import Shifty from '@deepsourcelabs/shifty'
+import Shifty from "@deepsourcelabs/shifty";
 
-const shifty = new Shifty(harden=true, defaultLength=16)
-shifty.generate(length=12) // G8qZt7PEha^s
+const shifty = new Shifty((harden = true), (defaultLength = 16));
+shifty.generate((length = 12)); // G8qZt7PEha^s
 ```
 
 ### Options
@@ -26,20 +26,19 @@ shifty.generate(length=12) // G8qZt7PEha^s
 ##### `Shifty`
 
 | Parameter       | Default | Description                                                         |
-|-----------------|---------|---------------------------------------------------------------------|
+| --------------- | ------- | ------------------------------------------------------------------- |
 | `harden`        | `true`  | This flag enables adding special characters in the generated secret |
-| `defaultLength` | `16`      | Set the default length of the secrets generated                     |
-
+| `defaultLength` | `16`    | Set the default length of the secrets generated                     |
 
 ##### `Shifty.generate`
 
-| Parameter       | Default                | Description                                     |
-|-----------------|------------------------|-------------------------------------------------|
-| `length`        | `Shifty.defaultLength` | Length of the secret to be generated            |
+| Parameter | Default                | Description                          |
+| --------- | ---------------------- | ------------------------------------ |
+| `length`  | `Shifty.defaultLength` | Length of the secret to be generated |
 
 ## How it works
 
-cryptographic primitives in order to build systems using cryptography. This library leverages the Web Crypto API to generate secrets and passwords for the web.
+The Web Crypto API is an interface allowing a script to use cryptographic primitives in order to build systems using cryptography. This library leverages the Web Crypto API to generate secrets and passwords for the web.
 
 In case the browser does not support the Web Crypto API, the library uses a fallback, it generates the string using Math.random(). This is not cryptographically safe, but is still usable.
 
