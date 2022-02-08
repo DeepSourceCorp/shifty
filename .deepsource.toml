@@ -10,10 +10,6 @@ enabled = true
 name = "javascript"
 enabled = true
 
-  [analyzers.meta]
-  module_system = "es-modules"
-  environment = [
-    "browser",
-    "jest"
-  ]
-  dialect = "typescript"
+[[transformers]]
+name = "prettier"
+enabled = true
