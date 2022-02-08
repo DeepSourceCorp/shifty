@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: semantic-pr
+        uses: kunalnagarco/action-semantic-pr@v1.4.1
