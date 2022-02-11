@@ -1,9 +1,12 @@
 <div align="center">
-
+<br>
+<br>
 <p>
   <img src="./.github/logo-light.svg#gh-light-mode-only" alt="Shifty" width="300">
   <img src="./.github/logo-dark.svg#gh-dark-mode-only" alt="Shifty" width="300">
 </p>
+<br>
+<br>
 
 [![DeepSource](https://deepsource.io/gh/deepsourcelabs/shifty.svg/?label=active+issues&show_trend=true&token=-guPFvlwSE5CSxHrlAc563Bz)](https://deepsource.io/gh/deepsourcelabs/shifty/?ref=repository-badge) [![DeepSource](https://deepsource.io/gh/deepsourcelabs/shifty.svg/?label=resolved+issues&show_trend=true&token=-guPFvlwSE5CSxHrlAc563Bz)](https://deepsource.io/gh/deepsourcelabs/shifty/?ref=repository-badge)
 
