@@ -1,6 +1,9 @@
 <div align="center">
 
-# Shifty
+<p>
+  <img src="./.github/logo-light.svg" alt="Shifty" width="350">
+  <img src="./.github/logo-dark.svg" alt="Shifty" width="350">
+</p>
 
 [![DeepSource](https://deepsource.io/gh/deepsourcelabs/shifty.svg/?label=active+issues&show_trend=true&token=-guPFvlwSE5CSxHrlAc563Bz)](https://deepsource.io/gh/deepsourcelabs/shifty/?ref=repository-badge) [![DeepSource](https://deepsource.io/gh/deepsourcelabs/shifty.svg/?label=resolved+issues&show_trend=true&token=-guPFvlwSE5CSxHrlAc563Bz)](https://deepsource.io/gh/deepsourcelabs/shifty/?ref=repository-badge)
 
