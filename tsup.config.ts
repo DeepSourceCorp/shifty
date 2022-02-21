@@ -2,12 +2,12 @@ import { defineConfig } from "tsup";
 
 export default defineConfig((options) => {
   return {
-    name: "shifty",
-    entry: ["src/shifty.ts"],
-    minify: !options.watch,
+    entry: { index: "src/shifty.ts" },
+    minify: false,
+    target: "ES2021",
     format: ["cjs", "esm"],
-    platform: "browser",
     splitting: false,
+    dts: true,
     sourcemap: true,
     clean: true,
   };
