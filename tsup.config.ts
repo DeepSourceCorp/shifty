@@ -3,7 +3,7 @@ import { defineConfig } from "tsup";
 export default defineConfig((options) => {
   return {
     entry: { index: "src/shifty.ts" },
-    minify: false,
+    minify: !options.watch,
     target: "ES2021",
     format: ["cjs", "esm"],
     splitting: false,
