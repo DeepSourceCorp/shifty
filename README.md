@@ -1,10 +1,16 @@
 <div align="center">
-
-# Shifty
+<br>
+<br>
+<p>
+  <img src="./.github/logo-light.svg#gh-light-mode-only" alt="Shifty" width="300">
+  <img src="./.github/logo-dark.svg#gh-dark-mode-only" alt="Shifty" width="300">
+</p>
+<br>
+<br>
 
 [![DeepSource](https://deepsource.io/gh/deepsourcelabs/shifty.svg/?label=active+issues&show_trend=true&token=-guPFvlwSE5CSxHrlAc563Bz)](https://deepsource.io/gh/deepsourcelabs/shifty/?ref=repository-badge) [![DeepSource](https://deepsource.io/gh/deepsourcelabs/shifty.svg/?label=resolved+issues&show_trend=true&token=-guPFvlwSE5CSxHrlAc563Bz)](https://deepsource.io/gh/deepsourcelabs/shifty/?ref=repository-badge)
 
-  <p>Shifty is a tiny secrets generator, built using TypeScript for the web.</p>
+  <p>Shifty is a tiny zero-dependency secrets generator, built for the web using TypeScript.</p>
 
 </div>
 
