@@ -17,13 +17,13 @@
 ## Installation
 
 ```sh
-yarn add @deepsourcelabs/shifty
+yarn add @deepsource/shifty
 ```
 
 ## Usage
 
 ```js
-import Shifty from "@deepsourcelabs/shifty";
+import Shifty from "@deepsource/shifty";
 
 const shifty = new Shifty((harden = true), (defaultLength = 16));
 shifty.generate((length = 12)); // G8qZt7PEha^s
