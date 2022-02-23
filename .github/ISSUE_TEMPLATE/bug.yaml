@@ -1,7 +1,8 @@
-name: Default issue template
-description: Generic issue template for Shifty
-title: "<title>"
-labels: [Needs Triage]
+name: 🐞 Bug
+description: Report bugs
+title: "Bug: <title>"
+labels: [Bug, Needs Triage]
+
 body:
   - type: checkboxes
     attributes:
