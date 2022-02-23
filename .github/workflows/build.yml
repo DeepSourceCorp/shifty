@@ -14,5 +14,5 @@ jobs:
       - name: Install packages
         run: yarn
 
-      - name: Run Test
+      - name: Build shifty
         run: yarn build
