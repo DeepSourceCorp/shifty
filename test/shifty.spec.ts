@@ -1,5 +1,6 @@
 import { assert, describe, it, beforeEach, afterEach, vi } from "vitest";
 import Shifty from "../src/shifty";
+import nodeCrypto from "crypto";
 
 describe("Validate Characters Method", () => {
   it.concurrent("Doesn't allow special characters when not hardened", () => {
@@ -99,19 +100,9 @@ describe("Generate Method with Web Crypto", () => {
     };
     const spy = vi.spyOn(window.crypto, "getRandomValues");
 
-    spy.mockImplementation(() => {
-      const buffer = new Uint8Array(256);
-
-      let rd = 0;
-      for (let loopIndex = 0; loopIndex < buffer.length; loopIndex++) {
-        while (1) {
-          rd = Math.round(Math.random() * 256);
-          if (rd >= 0 && rd <= 255) break;
-        }
-        buffer[loopIndex] = rd;
-      }
-
-      return buffer;
+    spy.mockImplementation((buffer) => {
+      // @ts-ignore
+      return nodeCrypto.randomFillSync(buffer);
     });
   });
 
