@@ -1,5 +1,6 @@
 import { assert, describe, it, beforeEach, afterEach, vi } from "vitest";
 import Shifty from "../src/shifty";
+import nodeCrypto from "crypto";
 
 describe("Validate Characters Method", () => {
   it.concurrent("Doesn't allow special characters when not hardened", () => {
@@ -98,9 +99,9 @@ describe("Generate Method with Web Crypto", () => {
       getRandomValues: vi.fn(),
     };
     const spy = vi.spyOn(window.crypto, "getRandomValues");
-    const nodeCrypto = require("crypto");
 
     spy.mockImplementation((buffer) => {
+      // @ts-ignore
       return nodeCrypto.randomFillSync(buffer);
     });
   });
