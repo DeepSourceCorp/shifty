@@ -98,20 +98,10 @@ describe("Generate Method with Web Crypto", () => {
       getRandomValues: vi.fn(),
     };
     const spy = vi.spyOn(window.crypto, "getRandomValues");
+    const nodeCrypto = require("crypto");
 
-    spy.mockImplementation(() => {
-      const buffer = new Uint8Array(256);
-
-      let rd = 0;
-      for (let loopIndex = 0; loopIndex < buffer.length; loopIndex++) {
-        while (1) {
-          rd = Math.round(Math.random() * 256);
-          if (rd >= 0 && rd <= 255) break;
-        }
-        buffer[loopIndex] = rd;
-      }
-
-      return buffer;
+    spy.mockImplementation((buffer) => {
+      return nodeCrypto.randomFillSync(buffer);
     });
   });
 
