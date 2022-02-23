@@ -2,6 +2,7 @@
   "name": "@deepsource/shifty",
   "description": "Shifty is a tiny zero-dependency secrets generator, built for the web using TypeScript.",
   "version": "1.0.0",
+  "license": "MIT",
   "homepage": "https://github.com/deepsourcelabs/shifty",
   "keywords": [
     "security",
