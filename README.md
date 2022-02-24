@@ -31,7 +31,6 @@ const shifty = new Shifty((harden = true), (defaultLength = 16));
 shifty.generate((length = 12)); // G8qZt7PEha^s
 ```
 
-
 ### Options
 
 ##### `Shifty`
