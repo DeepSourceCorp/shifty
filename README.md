@@ -22,12 +22,15 @@ yarn add @deepsource/shifty
 
 ## Usage
 
+> Shifty is built for the browser and won't work with Node. You can use the built-in [crypto](https://nodejs.org/api/crypto.html#crypto) module instead
+
 ```js
 import Shifty from "@deepsource/shifty";
 
 const shifty = new Shifty((harden = true), (defaultLength = 16));
 shifty.generate((length = 12)); // G8qZt7PEha^s
 ```
+
 
 ### Options
 
