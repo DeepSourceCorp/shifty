@@ -79,14 +79,16 @@ export default class Shifty {
    */
   generate(length?: number): string {
     length = length ? length : this.defaultLength;
-
-    this.populateBuffer();
+    
     let secret = "";
 
     // The while loop ensures we always satisfy the length condition
     // If the inner loop ends before we have the password of the required length
     // the while loop will restart the inner loop
     while (secret.length < length) {
+      // generate a new buffer everytime to ensure we don't end up with repeating values
+      this.populateBuffer();
+      
       for (
         let rollIndex = 0;
         rollIndex < this.randomBuffer.length;
@@ -103,10 +105,7 @@ export default class Shifty {
           break;
         }
       }
-      // generate a new buffer to ensure we don't end up with repeating values
-      this.populateBuffer();
     }
-
     return secret;
   }
 
