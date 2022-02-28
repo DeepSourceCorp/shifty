@@ -79,7 +79,7 @@ export default class Shifty {
    */
   generate(length?: number): string {
     length = length ? length : this.defaultLength;
-    
+
     let secret = "";
 
     // The while loop ensures we always satisfy the length condition
@@ -88,7 +88,7 @@ export default class Shifty {
     while (secret.length < length) {
       // generate a new buffer everytime to ensure we don't end up with repeating values
       this.populateBuffer();
-      
+
       for (
         let rollIndex = 0;
         rollIndex < this.randomBuffer.length;
