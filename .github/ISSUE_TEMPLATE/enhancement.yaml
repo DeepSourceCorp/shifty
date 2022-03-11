@@ -7,10 +7,10 @@ labels: [Feature Request, Needs Triage]
 body:
   - type: markdown
     attributes:
-      value: "# Explain in a few short lines what is the feature you wish to see in this project"
+      value: "## Explain in a few short lines what is the feature you wish to see in this project"
   - type: markdown
     attributes:
-      value: "# How will this enhancement improve the quality of functionality for the library"
+      value: "## How will this enhancement improve the quality of functionality for the library"
   - type: dropdown
     attributes:
       label: Is this going to be a breaking change
