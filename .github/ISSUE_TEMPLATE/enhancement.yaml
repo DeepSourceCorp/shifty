@@ -9,7 +9,7 @@ body:
     attributes:
       label: Describe the enhancement
       value: "> Explain in a few short lines what is the feature you wish to see in this project"
-      
+
   - type: markdown
     attributes:
       label: How will this enhancement improve the quality of functionality for the library
