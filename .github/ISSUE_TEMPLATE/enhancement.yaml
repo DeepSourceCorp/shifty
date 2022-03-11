@@ -11,7 +11,7 @@ body:
       label: How will this enhancement improve the quality of functionality for the library
   - type: dropdown
     attributes:
-      label: Is this going to be a breaking change 
+      label: Is this going to be a breaking change
       options:
-      - Yes
-      - No
+        - Yes
+        - No
