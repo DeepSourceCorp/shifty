@@ -3,6 +3,10 @@ version = 1
 test_patterns = ["**/test/**"]
 
 [[analyzers]]
+name = "test-coverage"
+enabled = true
+
+[[analyzers]]
 name = "secrets"
 enabled = true
 
@@ -10,14 +14,6 @@ enabled = true
 name = "javascript"
 enabled = true
 
-  [analyzers.meta]
-  module_system = "es-modules"
-  environment = [
-    "browser",
-    "jest"
-  ]
-  dialect = "typescript"
-
 [[transformers]]
 name = "prettier"
-enabled = true 
+enabled = true
